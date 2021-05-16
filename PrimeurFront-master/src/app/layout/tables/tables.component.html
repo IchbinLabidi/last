@@ -1,0 +1,45 @@
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<div [@routerTransition]>
+    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+    <div class="row">
+        <div class="col col-xl-12 col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <b class="col col-lg-2">Users List </b>
+                    <input class="col col-lg-8" type="text" placeholder="{{ 'Search' | translate}}"> &nbsp;&nbsp;
+                    <a [routerLink]="['/signup']" class="col-lg-2 btn btn-success btn-rounded">Add new User</a>
+</div>
+                <table class="card-body table table-hover table-bordered">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>Prenom</th>
+                        <th>Nom</th>
+                        <th>Email</th>
+                        <th>Equipe</th>
+                        <th>Fonction</th>
+                        <th colspan="3">action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let user of users , let i=index">
+                        <th scope="row">{{this.user.id}}</th>
+                        <td>{{this.user.prenom}}</td>
+                        <td>{{this.user.nom}}</td>
+                        <td>{{this.user.mail}}</td>
+                        <td>{{this.user.equipe}}</td>
+                        <td>{{this.user.fonction}}</td>
+                        <td>
+                            <button class="btn btn-primary" (click)="soft(this.user.id)"><i class="fa fa-eye" aria-hidden="true" title="Details"></i></button>
+                            <button class="btn btn-warning"><i class="fa fa-pencil-square" aria-hidden="true" title="Edit"></i></button>
+                            <button class="btn btn-danger" (click)="deleteUser(this.user.id)"><i class="fa fa-trash" aria-hidden="true" title="Delete"></i></button>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

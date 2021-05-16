@@ -1,0 +1,97 @@
+<div>
+    <div class="col col-xl-12 col-lg-12">
+        <div class="card-header d-flex justify-content-center w-100 p-3" style="color: blue " >{{ 'Dashboard' | translate }}</div>
+        <div class="card-body" id="dash-body" style="background: dimgray">
+            <div class="row">
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card card-flip mb-3">
+                        <div>
+                            <div class="card-header">
+                                Charts
+                            </div>
+                            <div class="card-body" >
+                                <img src="../../../assets/images/charts.png" class="img-fluid">
+                            </div>
+                            <div class="card-footer">
+                                <a [routerLink]="['/charts']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">Charts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Users-List
+                        </div>
+                        <div class="card-body">
+                            <img src="../../../assets/images/user-list.jpeg">
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/tables']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">User-List</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Formation
+                        </div>
+                        <div class="card-body">
+                            <img src="../../../assets/images/formation.png" height="225">
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">Formation</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Profil
+                        </div>
+                        <div class="card-body">
+                            <img src="../../../assets/images/profil2.jpeg" sizes="224x225">
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/user']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">Profil</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Soft-Skills
+                        </div>
+                        <div class="card-body">
+                            <img src="../../../assets/images/soft-skills.png" width="250" height="225">
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/soft-skill']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">Soft-Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col col-sm-4 zoom">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            Tech-Skills
+                        </div>
+                        <div class="card-body">
+                            <img src="../../../assets/images/tech-skill2.jpeg" width="250" height="225">
+                        </div>
+                        <div class="card-footer">
+                            <a [routerLink]="['/tech-skill']" class="btn btn-info btn-sm d-flex justify-content-center w-100 p-3">Tech-Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
